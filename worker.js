@@ -30,15 +30,22 @@ export default {
         XRealIP: request.headers.get('x-real-ip'),
         IP: request.headers.get('CF-Connecting-IP'),
         IPv6: request.headers.get('CF-Connecting-IPv6'),
+        UA: request.headers.get('User-Agent'),
         Authorization: request.headers.get('Authorization'),
         From: request.headers.get('From'),
-        UA: request.headers.get('User-Agent'),
         Referer: request.headers.get('Referer'),
         Cookie: request.headers.get('Cookie'),
         Accept: request.headers.get('Accept'),
+        AcceptEncoding: request.headers.get('Accept-Encoding'),
+        AcceptLanguage: request.headers.get('Accept-Language'),
+        ContentType: request.headers.get('Content-Type'),
+        ContentLanguage: request.headers.get('Content-Language'),
+        Date: request.headers.get('Date'),
+        DeviceMemory: request.headers.get('Device-Memory'),
         XFF: request.headers.get('X-Forwarded-For'),
         XHF: request.headers.get('X-Forwarded-Host'),
-        XFP: request.headers.get('X-Forwarded-Proto')
+        XFP: request.headers.get('X-Forwarded-Proto'),
+        // Others: request.headers.get('From')
       }
     };
   
